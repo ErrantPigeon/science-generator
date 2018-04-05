@@ -41,7 +41,8 @@ babblePrefix = ['massive', 'fine', 'historic',
                 'generative', 'degenerate', 'planar',
                 'luminal', 'temporal', 'material',
                 'electronic', 'static', 'mutable',
-                'genetic', 'soluable', 'moving']
+                'genetic', 'soluable', 'moving',
+                'point-like', 'fractal', 'inverted']
 babble1 = ['meta', 'super', 'inter',
            'uni', 'intra', 'ultra',
            'proto', 'post', 'anti',
@@ -71,7 +72,8 @@ babble2 = ['particles', 'emissions', 'magnets',
            'peptides', 'oxides', 'chains',
            'potentials', 'aggressions', 'trends',
            'rhizomes', 'cells', 'clusters',
-           'actions', 'buffers', 'reactions']
+           'actions', 'buffers', 'reactions',
+           'modelling', 'processes', 'cascades']
 
 # Randomly determining the title type
 # 1: type + babble prefix + babble
