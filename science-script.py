@@ -5,7 +5,8 @@ import random
 
 # defining the text lists
 fieldList = ['physics', 'biology', 'chemistry',
-'economics', 'history', 'sociology']
+'economics', 'history', 'sociology',
+'mathematics']
 
 workTypeGeneric = ['study', 'report', 'overview',
 'theory', 'analysis', 'summary',
@@ -82,7 +83,7 @@ babblePrefixHistory = ['medieval','european','political',
 'important', 'far-reaching', 'visited',
 'falsified', 'verified', 'sourced',
 'memetic', 'classical', 'ancient',
-'trusted', 'reported', 'documented']
+'sourced', 'reported', 'documented']
 
 babblePrefixEconomics = ['national', 'global', 'local',
 'pecuniary', 'political', 'driven',
@@ -98,8 +99,19 @@ babblePrefixSociology = ['national', 'global', 'local',
 'memetic', 'economic', 'testable',
 'academic', 'distributed', 'conclusive']
 
+babblePrefixMathematics = ['manifold', 'subtractive',
+'geometric', 'distributed', 'factorised'
+'commutating', 'bayesian', 'frequentist',
+'hyperbolic', 'symmetric', 'orthogonal'
+'fractal', 'normal', 'generalised',
+'Gaussian', 'Laplacian', 'Riemannian',
+'Lorentzian', 'Abelian', 'axiomatic',
+'complex', 'finite', 'null',
+'chaotic', 'linear', 'quadratic',
+'higher-order', 'approximate', 'quantised']
+
 babbleGeneric1 = ['meta', 'super', 'inter',
-'uni', 'intra', 'ultra',
+'omni', 'intra', 'ultra',
 'proto', 'anti', 'hyper',
 'un', 'mono', 'pre',
 'poly', 'multi',
@@ -108,7 +120,7 @@ babbleGeneric1 = ['meta', 'super', 'inter',
 'micro', 'exo', 'para',
 'homo', 'trans', 'quasi']
 
-babblePhysics1 = ['cryo', 'radio', 'quantum ',
+babblePhysics1 = ['uni', 'radio', 'quantum ',
 'bulk ', 'phase ', 'tensor',
 'block ', 'cross', 'n-',
 'z-', 's-', 'r-']
@@ -135,7 +147,12 @@ babbleSociology1 = ['socio','cyber', 'eco',
 'neo', 'retro', 'ethno',
 'block-', 'cross', 'post']
 
-babbleGeneric2 = ['events', 'dimensions', 'sources',
+babbleMathematics1 = ['rho-','sigma-','alpha-',
+'bulk ', 'phase ', 'phi-',
+'block ', 'ortho', 'n-',
+'z-', 's-', 'r-']
+
+babbleGeneric2 = ['events', 'dimensions', 'points',
 'collisions', 'devices', 'mappings',
 'remnants', 'chains', 'potentials',
 'clusters', 'actions', 'buffers',
@@ -192,6 +209,11 @@ babbleSociology2 = ['media', 'narratives', 'timelines',
 'cultures', 'societies', 'identities',
 'journalism', 'propaganda', 'messaging']
 
+babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
+'projections', 'algebras', 'relationships',
+'connections', 'tensors', 'vectors',
+'scalars', 'numbers', 'primes',
+'tuples', 'orders', 'infinities']
 
 # Loop to make several of these...
 for x in range(0, 15):
@@ -233,6 +255,11 @@ for x in range(0, 15):
         babblePrefix = babblePrefixGeneric + babblePrefixSociology
         babble1 = babbleGeneric1 + babbleSociology1
         babble2 = babbleGeneric2 + babbleSociology2
+    if fieldType == 'mathematics':
+        workType = workTypeGeneric
+        babblePrefix = babblePrefixGeneric + babblePrefixMathematics
+        babble1 = babbleGeneric1 + babbleMathematics1
+        babble2 = babbleGeneric2 + babbleMathematics2
 
     # Randomly determining the title type
     # 1: type + babble prefix + babble
@@ -258,7 +285,7 @@ for x in range(0, 15):
         workTitle = (random.choice(addressWork) + " " + random.choice(babblePrefix) + " " + random.choice(babble1) + random.choice(babble2)).title()
     elif titleType == 5:
         workTitle = fieldType.title() + " of " + (random.choice(babblePrefix) + " " + random.choice(babble1) + random.choice(\
-babble2)).title()
+        babble2)).title()
     elif titleType == 6:
         workTitle = (random.choice(workType)).title() + " of " + (random.choice(babble1) + random.choice(babblePrefix) + " " + random.choice(babble2)).title()
     elif titleType == 7:
