@@ -328,9 +328,9 @@ for x in range(1, 21):
     # 9: tool + work type + babble
     # 10: tool + work type + babble prefix + babble
     if fieldType == 'physics' or fieldType == 'chemistry' or fieldType == 'biology':
-        titleType = random.randint(1,10)
+        titleType = random.randint(1,11)
     else:
-        titleType = random.randint(1,7)
+        titleType = random.randint(1,8)
 
     # Build title depending on random result
     if titleType == 1:
@@ -362,13 +362,17 @@ for x in range(1, 21):
                      " " + random.choice(comparerList) + " " +
                      (random.choice(babble1) + random.choice(babble2)).title())
     elif titleType == 8:
+        workTitle = (random.choice(addressWork).title() +             
+                     " " + (random.choice(babble1) + random.choice(babble2)).title() +
+                     " in " + (random.choice(babblePrefix) + " " + random.choice(babble1) + random.choice(babble2)).title())
+    elif titleType == 9:
         workTitle = ((random.choice(workType)).title() +
                      " of " + (random.choice(babble1) + random.choice(babblePrefix) +
                      " " + random.choice(babble2)).title())
-    elif titleType == 9:
+    elif titleType == 10:
         workTitle = ((random.choice(toolType) + " " + random.choice(toolReport)).title() +
                      " of " + (random.choice(babble1) + random.choice(babble2)).title())
-    elif titleType == 10:
+    elif titleType == 11:
         workTitle = ((random.choice(toolType) + " " + random.choice(toolReport)).title() +
                      " of " + (random.choice(babblePrefix) +
                      " " + random.choice(babble1) + random.choice(babble2)).title())
