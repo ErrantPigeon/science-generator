@@ -8,6 +8,12 @@ fieldList = ['physics', 'biology', 'chemistry',
 'economics', 'history', 'sociology',
 'mathematics']
 
+journalList = ["Journal of {}", "{} Review Letters", "Annals of {}",
+"Modern {}", "Review of {}", "{} Direct",
+"{} Compass", "{} Today", "Society of {}",
+"Contemporary {}", "{} Communications", "Applied {}",
+"{} Gazette", "Journal of Recent {}", "Applied {} Review"]
+
 workTypeGeneric = ['study', 'report', 'overview',
 'theory', 'analysis', 'summary',
 'review', 'survey', 'investigation',
@@ -58,7 +64,7 @@ babblePrefixGeneric = ['repeated', 'rare', 'unique',
 babblePrefixPhysics = ['massive', 'manifold', 'light',
 'accelerated', 'subtractive', 'weak',
 'strong', 'scalar', 'nuclear',
-'commutating', 'bayesian', 'frequentist',
+'commutating', 'bayesian', 'cosmic',
 'degenerate', 'strange', 'symmetric',
 'fractal', 'vectorised', 'generalised',
 'gravitational', 'elastic', 'radiative',
@@ -105,7 +111,7 @@ babblePrefixSociology = ['national', 'global', 'local',
 'academic', 'distributed', 'normative']
 
 babblePrefixMathematics = ['manifold', 'subtractive',
-'geometric', 'distributed', 'factorised'
+'geometric', 'distributed', 'factorised',
 'commutating', 'bayesian', 'frequentist',
 'hyperbolic', 'symmetric', 'orthogonal'
 'fractal', 'normal', 'generalised',
@@ -229,7 +235,7 @@ babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
 'calculus', 'integrals', 'sets']
 
 # Loop to make several of these...
-for x in range(0, 25):
+for x in range(0, 20):
 
     # Decide scientific field
     fieldType = random.choice(fieldList)
@@ -306,8 +312,11 @@ for x in range(0, 25):
     elif titleType == 8:
         workTitle = (random.choice(toolType) + " " + random.choice(toolReport)).title() + " of " + (random.choice(babblePrefix) + " " + random.choice(babble1) + random.choice(babble2)).title()
 
+    #generate journal
+    journalTitle = (random.choice(journalList)).format(fieldType)
+
     # Print title
-    fullTitle = workTitle + " (" + fieldType.title() + ")"
+    fullTitle = journalTitle.title() + ": " + workTitle + "\n"
     print(fullTitle)
 
 print("\nDone")
