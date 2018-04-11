@@ -24,11 +24,15 @@ monthList = ['Jan', 'Feb', 'Mar',
              'Jul', 'Aug', 'Sep',
              'Oct', 'Nov', 'Dec']
 
+# list of connector types
+comparerList = ['with', 'in', 'versus',
+                'against', 'and']
+
 # list of article types
 workTypeGeneric = ['study', 'report', 'overview',
                    'theory', 'analysis', 'summary',
                    'review', 'survey', 'investigation',
-                   'comparison', 'model', 'foundations']
+                   'model', 'foundations']
 workTypeSTEM = ['technical note', 'Monte Carlo', 'simulation',
                 'computation', 'trial', 'document',
                 'test', 'determination', 'proof']
@@ -38,6 +42,9 @@ optionalWorkPrefix = ['follow-up', 'preliminary', 'improved',
                       'proposed', 'empirical', 'internal',
                       'novel', 'new', 'inductive',
                       'in-depth', 'final', 'revised']
+
+# list of comparison work
+comparisonList = ['comparison', 'benchmark']
 
 # list of measurement tools and reports types
 toolTypeGeneric = ['laboratory', 'tabletop', 'field']
@@ -264,7 +271,7 @@ babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
                       'dimensions', 'fields', 'solutions']
 
 # Loop to make several of these...
-for x in range(0, 20):
+for x in range(1, 21):
 
     # Decide scientific field
     fieldType = random.choice(fieldList)
@@ -315,12 +322,15 @@ for x in range(0, 20):
     # 3: type prefix + type + babble
     # 4: address +  babble prefix + babble
     # 5: field + of + babble prefix + babble
-    # 6: type + babble1 + babble prefix + babble
-    # 7: tool + work type + babble
+    # 6: type of babble1 in babble2
+    # 7: comparison of babble and babble prefix + babble
+    # 8: type + babble1 + babble prefix + babble
+    # 9: tool + work type + babble
+    # 10: tool + work type + babble prefix + babble
     if fieldType == 'physics' or fieldType == 'chemistry' or fieldType == 'biology':
-        titleType = random.randint(1,8)
+        titleType = random.randint(1,10)
     else:
-        titleType = random.randint(1,5)
+        titleType = random.randint(1,7)
 
     # Build title depending on random result
     if titleType == 1:
@@ -343,13 +353,22 @@ for x in range(0, 20):
                      " of " + (random.choice(babblePrefix) +
                      " " + random.choice(babble1) + random.choice(babble2)).title())
     elif titleType == 6:
+        workTitle = (random.choice(workType).title() +
+                     " of " + (random.choice(babble1) + random.choice(babble2)).title() +
+                     " in " + (random.choice(babble1) + random.choice(babble2)).title())
+    elif titleType == 7:
+        workTitle = (random.choice(comparisonList).title() +
+                     " of " + (random.choice(babblePrefix) + " " + random.choice(babble2)).title() +
+                     " " + random.choice(comparerList) + " " +
+                     (random.choice(babble1) + random.choice(babble2)).title())
+    elif titleType == 8:
         workTitle = ((random.choice(workType)).title() +
                      " of " + (random.choice(babble1) + random.choice(babblePrefix) +
                      " " + random.choice(babble2)).title())
-    elif titleType == 7:
+    elif titleType == 9:
         workTitle = ((random.choice(toolType) + " " + random.choice(toolReport)).title() +
                      " of " + (random.choice(babble1) + random.choice(babble2)).title())
-    elif titleType == 8:
+    elif titleType == 10:
         workTitle = ((random.choice(toolType) + " " + random.choice(toolReport)).title() +
                      " of " + (random.choice(babblePrefix) +
                      " " + random.choice(babble1) + random.choice(babble2)).title())
