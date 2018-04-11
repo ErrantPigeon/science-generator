@@ -24,7 +24,7 @@ optionalWorkPrefix = ['follow-up', 'preliminary', 'improved',
 
 toolTypeGeneric = ['laboratory', 'tabletop', 'field']
 toolTypePhysics = ['collider', 'accelerator', 'passive']
-toolTypeChemistry = ['UV', 'X-ray', 'laser']
+toolTypeChemistry = ['spectrographic', 'X-ray', 'laser']
 toolTypeBiology = ['chemical', 'bioreactor', 'microscope']
 
 toolReport = ['scan', 'probe', 'experiment',
@@ -39,14 +39,14 @@ babblePrefixGeneric = ['repeated', 'rare', 'unique',
 'dual', 'deep', 'networked',
 'recursive', 'layered', 'recurring',
 'singular', 'structured', 'embedded',
-'warped', 'artificial', 'monadic',
+'regular', 'artificial', 'monadic',
 'speculative', 'convoluted', 'inferred',
 'fabricated', 'inhibited', 'hidden',
 'algorithmic', 'observable', 'additive',
 'parallel', 'adversarial', 'stochastic',
 'statistical', 'stable', 'critical',
 'fragile', 'generative', 'temporal',
-'material', 'electronic', 'static',
+'material', 'affected', 'static',
 'mobile', 'inverted', 'latent',
 'fundamental', 'ambient', 'cyclic',
 'recurring', 'aligned', 'separated',
@@ -59,10 +59,10 @@ babblePrefixPhysics = ['massive', 'manifold', 'light',
 'accelerated', 'subtractive', 'weak',
 'strong', 'scalar', 'nuclear',
 'commutating', 'bayesian', 'frequentist',
-'degenerate', 'luminal', 'symmetric',
+'degenerate', 'strange', 'symmetric',
 'fractal', 'vectorised', 'generalised',
 'gravitational', 'elastic', 'radiative',
-'characteristic', 'energetic', 'kinematic' ]
+'warped', 'energetic', 'kinematic' ]
 
 babblePrefixBiology = ['viral', 'endemic', 'pathological',
 'genetic', 'soluable', 'expressive',
@@ -84,13 +84,14 @@ babblePrefixChemistry = ['soluable', 'suspended', 'emulsified',
 
 babblePrefixHistory = ['medieval','european','political',
 'national', 'global', 'local',
-'important', 'far-reaching', 'visited',
+'important', 'far-reaching', 'memorial',
 'falsified', 'verified', 'sourced',
 'memetic', 'classical', 'ancient',
-'sourced', 'reported', 'documented']
+'sourced', 'reported', 'documented',
+'military', 'civilian', 'recorded']
 
 babblePrefixEconomics = ['national', 'global', 'local',
-'pecuniary', 'political', 'driven',
+'fungible', 'political', 'digital',
 'motivated', 'technical', 'visionary',
 'sustainable', 'ethical', 'fake',
 'memetic', 'volatile', 'predictive',
@@ -101,7 +102,7 @@ babblePrefixSociology = ['national', 'global', 'local',
 'political', 'fake', 'ethical',
 'accidental', 'predictable', 'formative',
 'memetic', 'economic', 'testable',
-'academic', 'distributed', 'conclusive']
+'academic', 'distributed', 'normative']
 
 babblePrefixMathematics = ['manifold', 'subtractive',
 'geometric', 'distributed', 'factorised'
@@ -113,7 +114,9 @@ babblePrefixMathematics = ['manifold', 'subtractive',
 'complex', 'finite', 'null',
 'chaotic', 'linear', 'quadratic',
 'higher-order', 'approximate', 'quantised',
-'integrated', 'derivative', 'affine']
+'integrated', 'derivative', 'affine',
+'random', 'functional', 'computable',
+'warped', 'curved', 'linearised']
 
 babbleGeneric1 = ['meta', 'super', 'inter',
 'omni', 'intra', 'ultra',
@@ -133,15 +136,15 @@ babblePhysics1 = ['uni', 'radio', 'quantum ',
 babbleChemistry1 = ['cryo', 'radio', 'quantum ',
 'bulk ', 'phase ', 'hydro',
 'nitro', 'sodium', 'n-',
-'z-', 's-', 'r-']
+'geo', 'litho', 'lipo']
 
 babbleBiology1 = ['cardio', 'neuro', 'sucra',
 'angio', 'immuno', 'oleo',
-'telo', 'amino', 'pheno',
+'myo', 'amino', 'pheno',
 'bio', 'phyto', 'meso']
 
 babbleHistory1 = ['war ', 'peace ', 'land ',
-'sea ', 'space ', 'post',
+'sea ', 'meso', 'post',
 'state ', 'imperial ', 'royal ']
 
 babbleEconomics1 = ['socio', 'cyber', 'eco',
@@ -155,11 +158,12 @@ babbleSociology1 = ['socio','cyber', 'eco',
 babbleMathematics1 = ['ρ-','σ-','α-',
 'bulk ', 'phase ', 'φ-',
 'block ', 'ortho', 'n-',
-'z-', 's-', 'r-']
+'z-', 's-', 'r-',
+'λ-', 'crypto', 'pseudo']
 
 babbleGeneric2 = ['dimensions', 'points',
 'collisions', 'devices', 'mappings',
-'remnants', 'chains', 'potentials',
+'types', 'chains', 'potentials',
 'clusters', 'actions', 'buffers',
 'reactions', 'processes', 'patterns']
 
@@ -171,7 +175,8 @@ babblePhysics2 = ['particles', 'emissions', 'projections',
 'rings', 'events', 'fluids',
 'matter', 'lattices', 'remnants',
 'surfaces', 'excitations', 'topologies',
-'resonances', 'coefficients', 'oscillations']
+'resonances', 'coefficients', 'oscillations',
+'plasmas', 'condensates', 'states']
 
 babbleChemistry2 = ['structures', 'chlorates', 'formations',
 'rings', 'oxides', 'solvents',
@@ -179,28 +184,30 @@ babbleChemistry2 = ['structures', 'chlorates', 'formations',
 'fluids', 'phosphates' , 'conductors',
 'calculations', 'carbons', 'magnets',
 'ferrites', 'solids', 'bonds',
-'films', 'matter', 'fluids',
+'films', 'chlorides', 'fluids',
 'filters', 'excitations', 'surfaces',
-'resonances', 'coefficients', 'minerals']
+'resonances', 'coefficients', 'minerals',
+'phthalates', 'glasses', 'gases']
 
 babbleBiology2 = ['structures', 'rhizomes', 'formations',
 'rings', 'oxides', 'solvents',
-'lubricants', 'depositions', 'growths',
+'secretions', 'depositions', 'growths',
 'fluids', 'cavitations' , 'matrices',
 'plasmids', 'cascades', 'magnets',
 'peptides', 'solids', 'bonds',
 'fluids', 'lattices', 'films',
 'coefficients', 'cultures', 'scaffolds',
-'signalling', 'saccharids', 'acids']
+'signalling', 'saccharids', 'acids',
+'compounds', 'toxins', 'proteins']
 
-babbleHistory2 = ['media', 'narratives', 'timelines',
+babbleHistory2 = ['settlements', 'narratives', 'timelines',
 'aggressions', 'trends', 'events',
 'conflicts', 'populations', 'excavations',
-'histories', 'protests', 'movements',
+'histories', 'protests', 'migrations',
 'remnants', 'ruins', 'artifacts',
 'cultures', 'societies', 'civilisations']
 
-babbleEconomics2 = ['media', 'narratives', 'timelines',
+babbleEconomics2 = ['investments', 'narratives', 'timelines',
 'fluctuations', 'trends', 'predictions',
 'events', 'populations', 'crashes',
 'histories', 'collapses', 'movements',
@@ -209,8 +216,8 @@ babbleEconomics2 = ['media', 'narratives', 'timelines',
 
 babbleSociology2 = ['media', 'narratives', 'timelines',
 'fluctuations', 'trends', 'assignations',
-'teachings', 'populations', 'crashes',
-'histories', 'collapses', 'movements',
+'teachings', 'populations', 'linguistics',
+'histories', 'modernism', 'movements',
 'cultures', 'societies', 'identities',
 'journalism', 'events', 'messaging']
 
@@ -222,7 +229,7 @@ babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
 'calculus', 'integrals', 'sets']
 
 # Loop to make several of these...
-for x in range(0, 15):
+for x in range(0, 25):
 
     # Decide scientific field
     fieldType = random.choice(fieldList)
@@ -276,7 +283,7 @@ for x in range(0, 15):
     # 6: type + babble1 + babble prefix + babble
     # 7: tool + work type + babble
     if fieldType == 'physics' or fieldType == 'chemistry' or fieldType == 'biology':
-        titleType = random.randint(1,7)
+        titleType = random.randint(1,8)
     else:
         titleType = random.randint(1,5)
 
@@ -295,7 +302,9 @@ for x in range(0, 15):
     elif titleType == 6:
         workTitle = (random.choice(workType)).title() + " of " + (random.choice(babble1) + random.choice(babblePrefix) + " " + random.choice(babble2)).title()
     elif titleType == 7:
-        workTitle = (random.choice(toolType) + " " + random.choice(toolReport)).title() + " of " + (random.choice(babblePrefix) + " " + random.choice(babble2)).title()
+        workTitle = (random.choice(toolType) + " " + random.choice(toolReport)).title() + " of " + (random.choice(babble1) + random.choice(babble2)).title()
+    elif titleType == 8:
+        workTitle = (random.choice(toolType) + " " + random.choice(toolReport)).title() + " of " + (random.choice(babblePrefix) + " " + random.choice(babble1) + random.choice(babble2)).title()
 
     # Print title
     fullTitle = workTitle + " (" + fieldType.title() + ")"
