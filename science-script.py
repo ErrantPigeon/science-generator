@@ -52,7 +52,8 @@ babblePrefixGeneric = ['repeated', 'rare', 'unique',
 'recurring', 'aligned', 'separated',
 'ordered', 'universal', 'restricted',
 'recent', 'effective', 'apparent',
-'balanced', 'specific', 'connected']
+'balanced', 'specific', 'connected',
+'dominant', 'prevalent', 'frequent']
 
 babblePrefixPhysics = ['massive', 'manifold', 'light',
 'accelerated', 'subtractive', 'weak',
@@ -60,7 +61,8 @@ babblePrefixPhysics = ['massive', 'manifold', 'light',
 'commutating', 'bayesian', 'frequentist',
 'degenerate', 'luminal', 'symmetric',
 'fractal', 'vectorised', 'generalised',
-'gravitational', 'elastic', 'lossless']
+'gravitational', 'elastic', 'radiative',
+'characteristic', 'energetic', 'kinematic' ]
 
 babblePrefixBiology = ['viral', 'endemic', 'pathological',
 'genetic', 'soluable', 'expressive',
@@ -68,7 +70,8 @@ babblePrefixBiology = ['viral', 'endemic', 'pathological',
 'light', 'bacterial', 'cellular',
 'soluable', 'suspended', 'emulsified',
 'sustained', 'clinical', 'in-vitro',
-'living', 'vitrified', 'calcified']
+'living', 'vitrified', 'calcified',
+'active', 'activated', 'tubular']
 
 babblePrefixChemistry = ['soluable', 'suspended', 'emulsified',
 'crystalline', 'planar', 'manifold',
@@ -76,7 +79,8 @@ babblePrefixChemistry = ['soluable', 'suspended', 'emulsified',
 'asymmetric', 'dissolved', 'fractional',
 'bonded','computational','plastic',
 'sustained', 'sublimated', 'vaporised',
-'aerolised', 'frozen', 'molten']
+'aerolised', 'frozen', 'molten',
+'metallic', 'lathanic', 'pulverised']
 
 babblePrefixHistory = ['medieval','european','political',
 'national', 'global', 'local',
@@ -108,7 +112,8 @@ babblePrefixMathematics = ['manifold', 'subtractive',
 'Lorentzian', 'Abelian', 'axiomatic',
 'complex', 'finite', 'null',
 'chaotic', 'linear', 'quadratic',
-'higher-order', 'approximate', 'quantised']
+'higher-order', 'approximate', 'quantised',
+'integrated', 'derivative', 'affine']
 
 babbleGeneric1 = ['meta', 'super', 'inter',
 'omni', 'intra', 'ultra',
@@ -127,7 +132,7 @@ babblePhysics1 = ['uni', 'radio', 'quantum ',
 
 babbleChemistry1 = ['cryo', 'radio', 'quantum ',
 'bulk ', 'phase ', 'hydro',
-'block-', 'cross', 'n-',
+'nitro', 'sodium', 'n-',
 'z-', 's-', 'r-']
 
 babbleBiology1 = ['cardio', 'neuro', 'sucra',
@@ -147,12 +152,12 @@ babbleSociology1 = ['socio','cyber', 'eco',
 'neo', 'retro', 'ethno',
 'block-', 'cross', 'post']
 
-babbleMathematics1 = ['rho-','sigma-','alpha-',
-'bulk ', 'phase ', 'phi-',
+babbleMathematics1 = ['ρ-','σ-','α-',
+'bulk ', 'phase ', 'φ-',
 'block ', 'ortho', 'n-',
 'z-', 's-', 'r-']
 
-babbleGeneric2 = ['events', 'dimensions', 'points',
+babbleGeneric2 = ['dimensions', 'points',
 'collisions', 'devices', 'mappings',
 'remnants', 'chains', 'potentials',
 'clusters', 'actions', 'buffers',
@@ -163,17 +168,17 @@ babblePhysics2 = ['particles', 'emissions', 'projections',
 'trajectories', 'arrays', 'cascades',
 'bosons', 'leptons', 'hadrons',
 'mesons', 'poles', 'quarks',
-'rings', 'spaces', 'fluids',
+'rings', 'events', 'fluids',
 'matter', 'lattices', 'remnants',
 'surfaces', 'excitations', 'topologies',
 'resonances', 'coefficients', 'oscillations']
 
-babbleChemistry2 = ['structures', 'imprints', 'formations',
+babbleChemistry2 = ['structures', 'chlorates', 'formations',
 'rings', 'oxides', 'solvents',
 'lubricants', 'depositions', 'growths',
-'fluids', 'cavitations' , 'conductors',
-'calculations', 'cascades', 'magnets',
-'peptides', 'solids', 'bonds',
+'fluids', 'phosphates' , 'conductors',
+'calculations', 'carbons', 'magnets',
+'ferrites', 'solids', 'bonds',
 'films', 'matter', 'fluids',
 'filters', 'excitations', 'surfaces',
 'resonances', 'coefficients', 'minerals']
@@ -182,14 +187,14 @@ babbleBiology2 = ['structures', 'rhizomes', 'formations',
 'rings', 'oxides', 'solvents',
 'lubricants', 'depositions', 'growths',
 'fluids', 'cavitations' , 'matrices',
-'calculations', 'cascades', 'magnets',
+'plasmids', 'cascades', 'magnets',
 'peptides', 'solids', 'bonds',
 'fluids', 'lattices', 'films',
 'coefficients', 'cultures', 'scaffolds',
 'signalling', 'saccharids', 'acids']
 
 babbleHistory2 = ['media', 'narratives', 'timelines',
-'aggressions', 'trends', 'economies',
+'aggressions', 'trends', 'events',
 'conflicts', 'populations', 'excavations',
 'histories', 'protests', 'movements',
 'remnants', 'ruins', 'artifacts',
@@ -197,7 +202,7 @@ babbleHistory2 = ['media', 'narratives', 'timelines',
 
 babbleEconomics2 = ['media', 'narratives', 'timelines',
 'fluctuations', 'trends', 'predictions',
-'conflicts', 'populations', 'crashes',
+'events', 'populations', 'crashes',
 'histories', 'collapses', 'movements',
 'indicators', 'signals', 'warnings',
 'funds', 'accounts', 'treasuries']
@@ -207,13 +212,14 @@ babbleSociology2 = ['media', 'narratives', 'timelines',
 'teachings', 'populations', 'crashes',
 'histories', 'collapses', 'movements',
 'cultures', 'societies', 'identities',
-'journalism', 'propaganda', 'messaging']
+'journalism', 'events', 'messaging']
 
 babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
 'projections', 'algebras', 'relationships',
 'connections', 'tensors', 'vectors',
 'scalars', 'numbers', 'primes',
-'tuples', 'orders', 'infinities']
+'tuples', 'orders', 'infinities',
+'calculus', 'integrals', 'sets']
 
 # Loop to make several of these...
 for x in range(0, 15):
