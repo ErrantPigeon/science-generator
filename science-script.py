@@ -189,11 +189,11 @@ babbleMathematics1 = ['ρ-','σ-','α-',
                       'holo', 'denso', 'chromo']
 
 # second part of the noun
-babbleGeneric2 = ['dimensions', 'points',
-                  'sequences', 'devices', 'mappings',
+babbleGeneric2 = ['points', 'sequences', 'devices',
                   'types', 'chains', 'potentials',
                   'clusters', 'actions', 'buffers',
-                  'reactions', 'processes', 'patterns']
+                  'reactions', 'processes', 'patterns',
+                  'mappings']
 
 babblePhysics2 = ['particles', 'emissions', 'projections',
                   'calculations', 'cavitations', 'conductors',
@@ -206,7 +206,8 @@ babblePhysics2 = ['particles', 'emissions', 'projections',
                   'resonances', 'coefficients', 'oscillations',
                   'plasmas', 'condensates', 'states',
                   'collisions', 'impacts', 'amplitudes',
-                  'dynamics', 'spectra', 'violations']
+                  'dynamics', 'spectra', 'violations',
+                  'dimensions', 'strings', 'systems']
 
 babbleChemistry2 = ['structures', 'chlorates', 'formations',
                     'rings', 'oxides', 'solvents',
@@ -259,7 +260,8 @@ babbleMathematics2 = ['metrics', 'manifolds', 'toplogies',
                       'connections', 'tensors', 'vectors',
                       'scalars', 'numbers', 'primes',
                       'tuples', 'orders', 'infinities',
-                      'calculus', 'integrals', 'sets']
+                      'calculus', 'integrals', 'sets',
+                      'dimensions', 'fields', 'solutions']
 
 # Loop to make several of these...
 for x in range(0, 20):
